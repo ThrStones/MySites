@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mysite-blog-admin" />
+        <module name="mysite-blog-common" />
+        <module name="mysite-blog-frontend" />
+        <module name="mysite-novel-admin" />
+        <module name="mysite-novel-common" />
+        <module name="mysite-novel-frontend" />
+        <module name="mysite-one-admin" />
+        <module name="mysite-one-common" />
+        <module name="mysite-one-frontend" />
+        <module name="mysite-static-admin" />
+        <module name="mysite-static-frontend" />
+        <module name="mysite-user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common-static" target="1.5" />
+      <module name="mysite-blog-admin" target="1.6" />
+      <module name="mysite-blog-common" target="1.6" />
+      <module name="mysite-blog-front" target="1.5" />
+      <module name="mysite-blog-frontend" target="1.6" />
+      <module name="mysite-novel-admin" target="1.6" />
+      <module name="mysite-novel-common" target="1.6" />
+      <module name="mysite-novel-common (1)" target="1.5" />
+      <module name="mysite-novel-frontend" target="1.6" />
+      <module name="mysite-one-admin" target="1.6" />
+      <module name="mysite-one-common" target="1.6" />
+      <module name="mysite-one-frontend" target="1.6" />
+      <module name="mysite-parent" target="1.6" />
+      <module name="mysite-static" target="1.6" />
+      <module name="mysite-static-admin" target="1.6" />
+      <module name="mysite-static-frontend" target="1.6" />
+      <module name="mysite-user" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

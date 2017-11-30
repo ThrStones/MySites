@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/mysite-blog-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysite-blog-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysite-blog-frontend" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysite-novel-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysite-novel-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysite-novel-frontend" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysite-one-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysite-one-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysite-one-frontend" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysite-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysite-static" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysite-static-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysite-static-frontend" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysite-user" charset="UTF-8" />
+  </component>
+</project>

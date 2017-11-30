@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mysite-one-admin:war">
+    <output-path>$PROJECT_DIR$/mysite-one-admin/target</output-path>
+    <root id="archive" name="mysite-one-admin.war">
+      <element id="artifact" artifact-name="mysite-one-admin:war exploded" />
+    </root>
+  </artifact>
+</component>

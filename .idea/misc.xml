@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/mysite-blog-admin" />
+    <file type="web" url="file://$PROJECT_DIR$/mysite-blog-front" />
+    <file type="web" url="file://$PROJECT_DIR$/mysite-blog-frontend" />
+    <file type="web" url="file://$PROJECT_DIR$/mysite-novel-admin" />
+    <file type="web" url="file://$PROJECT_DIR$/mysite-novel-frontend" />
+    <file type="web" url="file://$PROJECT_DIR$/mysite-one-admin" />
+    <file type="web" url="file://$PROJECT_DIR$/mysite-one-frontend" />
+    <file type="web" url="file://$PROJECT_DIR$/mysite-static-admin" />
+    <file type="web" url="file://$PROJECT_DIR$/mysite-static-frontend" />
+    <file type="web" url="file://$PROJECT_DIR$/mysite-user" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/mysite-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-blog-common/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-blog-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-blog-front/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-user/pom.xml" />
+        <option value="$PROJECT_DIR$/mysitenovelcommon/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-novel-common/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-novel-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-novel-frontend/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-blog-frontend/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-one-common/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-one-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-one-frontend/pom.xml" />
+        <option value="$PROJECT_DIR$/common-static/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-static/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-static-frontend/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-static-admin/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
