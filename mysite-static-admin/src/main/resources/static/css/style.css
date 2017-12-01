@@ -1724,20 +1724,20 @@ ul.ft-link li a i {
     color: #ceced0;
 }
 
-.social-footer ul li a:hover i.fa-facebook, .social-footer ul li.active a i.fa-facebook {
+.social-footer ul li a:hover i.fa-qq, .social-footer ul li.active a i.fa-qq {
     color: #486eac;
 }
 
-.social-footer ul li a:hover i.fa-twitter, .social-footer ul li.active a i.fa-twitter {
-    color: #58c9f3;
+.social-footer ul li a:hover i.fa-weibo, .social-footer ul li.active a i.fa-weibo {
+    color: #e6162d;
 }
 
-.social-footer ul li a:hover i.fa-google-plus, .social-footer ul li.active a i.fa-google-plus {
-    color: #4a4a4a;
+.social-footer ul li a:hover i.fa-weixin, .social-footer ul li.active a i.fa-weixin {
+    color: #09bb07;
 }
 
-.social-footer ul li a:hover i.fa-pinterest, .social-footer ul li.active a i.fa-pinterest {
-    color: #d1282d;
+.social-footer ul li a:hover i.fa-github, .social-footer ul li.active a i.fa-github {
+    color: #000000;
 }
 
 /*pie chart */
