@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Created by ThrStones on 2017-12-01 17:25.
  */
 @Controller
-@RequestMapping("/login")
+@RequestMapping("/")
 public class LoginController {
     /**
      * 返回login页面
@@ -19,14 +19,6 @@ public class LoginController {
     @RequestMapping("/")
     public String login() {
         return "login/login";
-    }
-
-    /**
-     * 返回index页面
-     */
-    @RequestMapping("/index")
-    public String index() {
-        return "index";
     }
 
     /**

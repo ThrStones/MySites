@@ -1,8 +1,10 @@
 package com.thrstones.web.controller;
 
 import com.thrstones.bean.User;
+import com.thrstones.common.PageBean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,23 +27,29 @@ public class UserController {
     public String userlistHtml() {
         return "user/user";
     }
+
     /**
      * 获取user数据
      */
     @ResponseBody
     @RequestMapping("/userList")
-    public List<User> userList() {
+    public PageBean userList(
+            @RequestParam(value = "limit", required = true) int limit,
+            @RequestParam(value = "offset", required = true) int offset
+    ) {
         List<User> userList = new ArrayList<User>();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = (offset * limit); i < ((offset + 1) * limit); i++) {
             User user = new User();
             user.setId(i);
-            user.setName("张三"+i);
+            user.setName("张三" + i);
 
             userList.add(user);
         }
 
-        return userList;
+        PageBean pgUser = new PageBean(50, userList);
+
+        return pgUser;
     }
 
 

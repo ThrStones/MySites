@@ -16,7 +16,7 @@
     } catch (e) {}
     var bs = {
         3: {
-            buttonsClass: 'default',
+            buttonsClass: 'white',
             iconsPrefix: 'glyphicon',
             icons: {
                 paginationSwitchDown: 'glyphicon-collapse-down icon-chevron-down',
