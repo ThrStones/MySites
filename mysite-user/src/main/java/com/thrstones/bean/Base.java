@@ -17,9 +17,12 @@ public class Base {
     @GeneratedValue
     private int id;
     private String name;
-    private Timestamp createtime;
-    private Timestamp modifytime;
+    private Timestamp createTime;
+    private Timestamp modifyTime;
     private String remark;
+
+    public Base() {
+    }
 
     public int getId() {
         return id;
@@ -37,20 +40,20 @@ public class Base {
         this.name = name;
     }
 
-    public Timestamp getCreatetime() {
-        return createtime;
+    public Timestamp getCreateTime() {
+        return createTime;
     }
 
-    public void setCreatetime(Timestamp createtime) {
-        this.createtime = createtime;
+    public void setCreateTime(Timestamp createTime) {
+        this.createTime = createTime;
     }
 
-    public Timestamp getModifytime() {
-        return modifytime;
+    public Timestamp getModifyTime() {
+        return modifyTime;
     }
 
-    public void setModifytime(Timestamp modifytime) {
-        this.modifytime = modifytime;
+    public void setModifyTime(Timestamp modifyTime) {
+        this.modifyTime = modifyTime;
     }
 
     public String getRemark() {
@@ -66,8 +69,8 @@ public class Base {
         return "Base{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", createtime=" + createtime +
-                ", modifytime=" + modifytime +
+                ", createTime=" + createTime +
+                ", modifyTime=" + modifyTime +
                 ", remark='" + remark + '\'' +
                 '}';
     }

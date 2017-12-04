@@ -26,7 +26,3 @@ spring:
       properties:
         hibernate:
           dialect : org.hibernate.dialect.MySQL5Dialect
-  messages:
-    encoding: utf-8
-    basename: /i18n/messages
-

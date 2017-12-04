@@ -13,7 +13,7 @@ public class IndexController {
     /**
      * 返回index页面
      */
-    @RequestMapping("/index")
+    @RequestMapping("/")
     public String index() {
         return "index";
     }
