@@ -4,7 +4,7 @@
       xmlns:th="http://www.thymeleaf.org"
       layout:decorator="/base/layout">
 
-<head th:include="/base/layout :: head"></head>
+<head th:replace="/base/layout :: head"></head>
 
 <body>
 <section id="container" layout:fragment="content">

@@ -4,7 +4,7 @@
       xmlns:th="http://www.thymeleaf.org"
       layout:decorator="/base/layout">
 
-<head th:include="/base/layout :: head"></head>
+<head th:replace="/base/layout :: head"></head>
 <body>
 <section id="container" layout:fragment="content">
     <div th:replace="base/header :: header">Header</div>
@@ -28,7 +28,9 @@
                                     <input type="text" class="form-control" id="txt_search_statu">
                                 </div>
                                 <div class="col-sm-4" style="text-align:left;">
-                                    <button type="button" style="margin-left:50px" id="btn_query" class="btn btn-primary">查询</button>
+                                    <button type="button" style="margin-left:50px" id="btn_query"
+                                            class="btn btn-primary">查询
+                                    </button>
                                 </div>
                             </div>
                         </form>
@@ -38,11 +40,11 @@
             </div>
         </section>
     </section>
+    <script src="../project/user/user.js"></script>
     <!--main content end-->
     <div th:replace="base/footer :: footer">footer</div>
 </section>
 
-<script src="../user/user.js"></script>
 
 </body>
 </html>
