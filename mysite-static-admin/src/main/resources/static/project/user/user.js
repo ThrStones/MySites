@@ -13,7 +13,8 @@ $(function () {
 
 });
 
-/*https://www.cnblogs.com/landeanfen/p/4976838.html*/
+/*https://www.cnblogs.com/landeanfen/p/4976838.html
+* https://segmentfault.com/a/1190000009285548*/
 var TableInit = function () {
     var oTableInit = new Object();
     //初始化Table
