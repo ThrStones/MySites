@@ -31,12 +31,12 @@ a, a:hover, a:focus {
     outline: none;
 }
 ::selection {
-
-    background: #FF6C60;
+    background: #c2c2c2;
     color: #fff;
 }
+
 ::-moz-selection {
-    background: #FF6C60;
+    background: #c2c2c2;
     color: #fff;
 }
 
@@ -315,11 +315,11 @@ ul.sidebar-menu li a i {
 }
 
 ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
-    color: #FF6C60;
+    color: #00a8ff;
 }
 
 ul.sidebar-menu li a.active i {
-    color: #FF6C60;
+    color: #00a8ff;
 }
 
 

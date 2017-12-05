@@ -1,14 +1,16 @@
 package com.thrstones.web.controller;
 
 import com.thrstones.bean.User;
-import com.thrstones.common.PageBean;
+import com.thrstones.services.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,6 +22,11 @@ import java.util.List;
 @Controller
 @RequestMapping("/user")
 public class UserController {
+
+    @Autowired
+    private UserService userService;
+
+
     /**
      * 返回user list页面
      */
@@ -33,23 +40,20 @@ public class UserController {
      */
     @ResponseBody
     @RequestMapping("/userList")
-    public PageBean userList(
+    public Page<User> userList(
             @RequestParam(value = "limit", required = true) int limit,
-            @RequestParam(value = "offset", required = true) int offset
+            @RequestParam(value = "offset", required = true) int offset,
+            @RequestParam(value = "sort", required = false) String sort,
+            @RequestParam(value = "sortOrder", required = false) String sortOrder,
+            @RequestParam(value = "name", required = false) String name,
+            @RequestParam(value = "email", required = false) String email,
+            @RequestParam(value = "qq", required = false) String qq
     ) {
-        List<User> userList = new ArrayList<User>();
 
-        for (int i = (offset * limit); i < ((offset + 1) * limit); i++) {
-            User user = new User();
-            user.setId(i);
-            user.setName("张三" + i);
+        Pageable pageable =new PageRequest((offset/limit), limit);
+        Page<User> datas = userService.findAll(pageable);
 
-            userList.add(user);
-        }
-
-        PageBean pgUser = new PageBean(50, userList);
-
-        return pgUser;
+        return datas;
     }
 
 

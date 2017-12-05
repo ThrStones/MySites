@@ -144,14 +144,14 @@ ul {
 /*button*/
 
 .btn-default {
-    background-color: #bec3c7;
-    border-color: #bec3c7;
+    background-color: #00a8ff;
+    border-color: #00a8ff;
     color: #fff;
 }
 
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
-    background-color: #b0b5b9;
-    border-color: #b0b5b9;
+    background-color: #0098E1;
+    border-color: #0098E1;
     color: #fff;
 }
 
@@ -238,7 +238,7 @@ ul {
 /*shadow button*/
 
 .btn-shadow.btn-default {
-    box-shadow: 0 4px #9c9c9c;
+    box-shadow: 0 4px #0098E1;
 }
 .btn-shadow.btn-primary {
     box-shadow: 0 4px #29b392;

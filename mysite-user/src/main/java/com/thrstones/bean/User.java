@@ -60,8 +60,8 @@ public class User extends Base {
     /**
      * 用户最后登录时间
      */
-    @Column(name = "user_last_updateTime")
-    private Timestamp userLastUpdateTime;
+    @Column(name = "user_last_login_time")
+    private Timestamp userLastLoginTime;
 
     /**
      * 用户QQ
@@ -170,12 +170,12 @@ public class User extends Base {
         this.userRegisterIP = userRegisterIP;
     }
 
-    public Timestamp getUserLastUpdateTime() {
-        return userLastUpdateTime;
+    public Timestamp getUserLastLoginTime() {
+        return userLastLoginTime;
     }
 
-    public void setUserLastUpdateTime(Timestamp userLastUpdateTime) {
-        this.userLastUpdateTime = userLastUpdateTime;
+    public void setUserLastLoginTime(Timestamp userLastLoginTime) {
+        this.userLastLoginTime = userLastLoginTime;
     }
 
     public String getUserQQ() {
@@ -252,7 +252,7 @@ public class User extends Base {
                 ", userLastLoginIP='" + userLastLoginIP + '\'' +
                 ", userAvatar='" + userAvatar + '\'' +
                 ", userRegisterIP='" + userRegisterIP + '\'' +
-                ", userLastUpdateTime=" + userLastUpdateTime +
+                ", userLastLoginTime=" + userLastLoginTime +
                 ", userQQ='" + userQQ + '\'' +
                 ", userWeiBo='" + userWeiBo + '\'' +
                 ", userWeiChat='" + userWeiChat + '\'' +

@@ -17,6 +17,7 @@
       <module name="mysite-blog-common" target="1.6" />
       <module name="mysite-blog-front" target="1.5" />
       <module name="mysite-blog-frontend" target="1.6" />
+      <module name="mysite-common" target="1.6" />
       <module name="mysite-novel-admin" target="1.6" />
       <module name="mysite-novel-common" target="1.6" />
       <module name="mysite-novel-common (1)" target="1.5" />

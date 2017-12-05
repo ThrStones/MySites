@@ -29,8 +29,9 @@
     <link th:href="@{/css/slidebars.css(t=${timestamp})}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-
     <link th:href="@{/css/style.css(t=${timestamp})}" rel="stylesheet">
+
+    <link th:href="@{/project/style.css(t=${timestamp})}" rel="stylesheet">
     <link th:href="@{/css/style-responsive.css(t=${timestamp})}" rel="stylesheet"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
@@ -71,6 +72,7 @@
 <script th:src="@{/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js(t=${timestamp})}"></script>
 <script th:src="@{/js/owl.carousel.js(t=${timestamp})}"></script>
 <script th:src="@{/js/jquery.customSelect.min.js(t=${timestamp})}"></script>
+<script th:src="@{/js/jquery.validate.min.js(t=${timestamp})}"></script>
 <script th:src="@{/js/respond.min.js(t=${timestamp})}"></script>
 
 <!--right slidebar-->
@@ -83,6 +85,7 @@
 <script th:src="@{/js/sparkline-chart.js(t=${timestamp})}"></script>
 <script th:src="@{/js/easy-pie-chart.js(t=${timestamp})}"></script>
 <script th:src="@{/js/count.js(t=${timestamp})}"></script>
+<script th:src="@{/js/form-validation-script.js(t=${timestamp})}"></script>
 <!-- 各页面脚本 -->
 <th:block layout:fragment="bodyScript"></th:block>
 </body>
