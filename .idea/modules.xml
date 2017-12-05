@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/mysite-blog-admin/mysite-blog-admin.iml" filepath="$PROJECT_DIR$/mysite-blog-admin/mysite-blog-admin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mysite-blog-common/mysite-blog-common.iml" filepath="$PROJECT_DIR$/mysite-blog-common/mysite-blog-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mysite-blog-frontend/mysite-blog-frontend.iml" filepath="$PROJECT_DIR$/mysite-blog-frontend/mysite-blog-frontend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mysite-novel-admin/mysite-novel-admin.iml" filepath="$PROJECT_DIR$/mysite-novel-admin/mysite-novel-admin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mysite-novel-common/mysite-novel-common.iml" filepath="$PROJECT_DIR$/mysite-novel-common/mysite-novel-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mysite-novel-frontend/mysite-novel-frontend.iml" filepath="$PROJECT_DIR$/mysite-novel-frontend/mysite-novel-frontend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mysite-one-admin/mysite-one-admin.iml" filepath="$PROJECT_DIR$/mysite-one-admin/mysite-one-admin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mysite-one-common/mysite-one-common.iml" filepath="$PROJECT_DIR$/mysite-one-common/mysite-one-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mysite-one-frontend/mysite-one-frontend.iml" filepath="$PROJECT_DIR$/mysite-one-frontend/mysite-one-frontend.iml" />
       <module fileurl="file://$PROJECT_DIR$/mysite-parent/mysite-parent.iml" filepath="$PROJECT_DIR$/mysite-parent/mysite-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/mysite-static-admin/mysite-static-admin.iml" filepath="$PROJECT_DIR$/mysite-static-admin/mysite-static-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/mysite-static-frontend/mysite-static-frontend.iml" filepath="$PROJECT_DIR$/mysite-static-frontend/mysite-static-frontend.iml" />

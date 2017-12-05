@@ -6,15 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mysite-blog-admin" />
-        <module name="mysite-blog-common" />
-        <module name="mysite-blog-frontend" />
-        <module name="mysite-novel-admin" />
-        <module name="mysite-novel-common" />
-        <module name="mysite-novel-frontend" />
-        <module name="mysite-one-admin" />
-        <module name="mysite-one-common" />
-        <module name="mysite-one-frontend" />
         <module name="mysite-static-admin" />
         <module name="mysite-static-frontend" />
         <module name="mysite-user" />

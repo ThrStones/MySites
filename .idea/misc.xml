@@ -16,18 +16,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/mysite-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/mysite-blog-common/pom.xml" />
-        <option value="$PROJECT_DIR$/mysite-blog-admin/pom.xml" />
         <option value="$PROJECT_DIR$/mysite-blog-front/pom.xml" />
         <option value="$PROJECT_DIR$/mysite-user/pom.xml" />
         <option value="$PROJECT_DIR$/mysitenovelcommon/pom.xml" />
-        <option value="$PROJECT_DIR$/mysite-novel-common/pom.xml" />
-        <option value="$PROJECT_DIR$/mysite-novel-admin/pom.xml" />
-        <option value="$PROJECT_DIR$/mysite-novel-frontend/pom.xml" />
-        <option value="$PROJECT_DIR$/mysite-blog-frontend/pom.xml" />
-        <option value="$PROJECT_DIR$/mysite-one-common/pom.xml" />
-        <option value="$PROJECT_DIR$/mysite-one-admin/pom.xml" />
-        <option value="$PROJECT_DIR$/mysite-one-frontend/pom.xml" />
         <option value="$PROJECT_DIR$/common-static/pom.xml" />
         <option value="$PROJECT_DIR$/mysite-static/pom.xml" />
         <option value="$PROJECT_DIR$/mysite-static-frontend/pom.xml" />

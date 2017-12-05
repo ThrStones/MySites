@@ -10,15 +10,6 @@
     <version>0.1</version>
 
     <modules>
-        <module>../mysite-blog-admin</module>
-        <module>../mysite-blog-common</module>
-        <module>../mysite-blog-frontend</module>
-        <module>../mysite-novel-admin</module>
-        <module>../mysite-novel-common</module>
-        <module>../mysite-novel-frontend</module>
-        <module>../mysite-one-admin</module>
-        <module>../mysite-one-common</module>
-        <module>../mysite-one-frontend</module>
         <module>../mysite-static-admin</module>
         <module>../mysite-static-frontend</module>
         <module>../mysite-user</module>
