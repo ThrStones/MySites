@@ -41,7 +41,7 @@
     <![endif]-->
 </head>
 
-<body th:with="timestamp=${#dates.format(#dates.createNow(),'yyyyMMddHH')}">
+<body style="overflow-x:hidden;" th:with="timestamp=${#dates.format(#dates.createNow(),'yyyyMMddHH')}">
 
 <section>
     <div th:replace="base/header :: header">Header</div>

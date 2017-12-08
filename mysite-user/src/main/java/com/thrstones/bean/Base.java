@@ -1,8 +1,6 @@
 package com.thrstones.bean;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
@@ -15,9 +13,16 @@ public class Base {
     @Id
     @GeneratedValue
     private int id;
+
     private String name;
+
+    @Column(name = "create_time")
     private Timestamp createTime;
+
+    @Column(name = "modify_time")
     private Timestamp modifyTime;
+
+    @Lob
     private String remark;
 
     public Base() {

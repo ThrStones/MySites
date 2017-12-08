@@ -7,14 +7,8 @@
     display: block;
 }
 
-.bio-row-20 {
-    width: 20%;
-    float: left;
-    margin-bottom: 10px;
-    padding:0 15px;
-}
-
-.bio-row p span {
-    width: 100px;
-    display: inline-block;
-}
+.user-detail {
+     float: left;
+     margin-bottom: 10px;
+     padding:0 20px;
+ }

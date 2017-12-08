@@ -7,11 +7,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.util.List;
 
 /**
  * 用户CRUD
@@ -50,11 +49,20 @@ public class UserController {
             @RequestParam(value = "qq", required = false) String qq
     ) {
 
-        Pageable pageable =new PageRequest((offset/limit), limit);
+        Pageable pageable = new PageRequest((offset / limit), limit);
         Page<User> datas = userService.findAll(pageable);
 
         return datas;
     }
 
+    /**
+     * 返回user list页面
+     */
+    @RequestMapping("/getUsrById.html")
+    public String getUsrById(Model model, @RequestParam(value = "id", required = true) int id) {
+        User user = userService.findOne(id);
+        model.addAttribute("user", user);
+        return "user/detail";
+    }
 
 }

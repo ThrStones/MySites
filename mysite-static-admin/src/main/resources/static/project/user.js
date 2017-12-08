@@ -4,6 +4,9 @@
 $(function () {
 
     $("#nav-accordion").children().children('li a.active').removeClass("active");
+    $("#nav-accordion").children().children().children('ul li.active').removeClass("active");
+    $("#users").addClass("active");
+    $("#user").parent().css("style", "display:block");
     $("#user").addClass("active");
 
     //1.初始化Table
@@ -15,9 +18,9 @@ $(function () {
     oButtonInit.Init();
 
 
-    $("#btn_add").click(function () {
-        $("#user_form").removeClass("div-none").addClass("div-block");
-    });
+    // $("#btn_add").click(function () {
+    //     $("#user_form").removeClass("div-none").addClass("div-block");
+    // });
 
 });
 
@@ -106,8 +109,23 @@ var TableInit = function () {
                 }, {
                     field: 'userLock',
                     title: '是否锁定',
-                    sortable: true
-                },]
+                    sortable: true,
+                    formatter: function (value, row, index) {
+                        if (value == false) {
+                            return "<span style='color: red'>已锁定</span>";
+                        } else {
+                            return "正常使用";
+                        }
+                    }
+                },
+                // {
+                //     field: 'operate',
+                //     title: '操作',
+                //     align: 'center',
+                //     events: operateEvents,
+                //     formatter: operateFormatter
+                // }
+                ]
         });
     };
 
@@ -117,19 +135,19 @@ var TableInit = function () {
             "total": res.totalElements
         };
     }
+
     function onClickRow(item, $element) {
         $.ajax({
             type: "GET",
-            url: "/user/getUsrById",
+            url: "/user/getUsrById.html",
             data: {id:item.id},
-            dataType: "json",
-            success: function(data){
-
-                $("#clientId").val(data.clientId);
-                $("#account").val(data.account);
-                $("#password").val(data.password);
-                $("#activeYear").val(data.activeYear);
-
+            timeout: 50000,
+            cache: false,
+            success: function (result) {
+                $("#detail").html(result);
+            },
+            error: function () {
+                $("#message").html("Request time out");
             }
         });
     }
@@ -149,6 +167,89 @@ var TableInit = function () {
             return date.getFullYear() + "-" + month + "-" + currentDate + " " + hours + ":" + minutes + ":" + seconds;
         }
     }
+
+    // function operateFormatter(value, row, index) {
+    //     return [
+    //         '<a class="using" href="javascript:void(0)" title="Remove">',
+    //         '<i class="fa fa-check"></i>',
+    //         '</a>&nbsp;&nbsp;&nbsp;&nbsp;',
+    //         '<a class="upload" style="cursor: pointer" href="javascript:void(0)" title="Upload">',
+    //         '<label style="cursor: pointer" for="'+row['adId']+'">',
+    //         '<i class="fa fa-upload"></i>',
+    //         '<input type="file" name="adUpload" style="display: none;" class="adUpload" id="'+row['adId']+'" >',
+    //         '</label>',
+    //         '</a>&nbsp;&nbsp;&nbsp;&nbsp;',
+    //         '<a class="remove" href="javascript:void(0)" title="Using">',
+    //         '<i class="fa fa-times"></i>',
+    //         '</a>',
+    //     ].join('');
+    // }
+    //
+    // window.operateEvents = {
+    //     'click .remove': function (e, value, row, index) {
+    //         $.ajax({
+    //             type : "POST",
+    //             url : "/wadmin/ad/deleteAd",
+    //             data : {
+    //                 adId : row['adId']
+    //             },
+    //             dataType : 'JSON',
+    //             success : function (data) {
+    //                 if (data.result != 0) {
+    //                     toastr.info("info", data.message);
+    //                     return ;
+    //                 }
+    //                 toastr.success("success", '删除成功');
+    //                 $("#table").bootstrapTable('remove', {
+    //                     field: 'adId',
+    //                     values: [row['adId']]
+    //                 });
+    //             }
+    //         });
+    //
+    //         return false;
+    //     },
+    //     'click .using': function (e, value, row, index) {
+    //         $.ajax({
+    //             type : "POST",
+    //             url : "/wadmin/ad/usingAd",
+    //             data : {
+    //                 adId : row['adId']
+    //             },
+    //             dataType : 'JSON',
+    //             success : function (data) {
+    //                 if (data.result != 0) {
+    //                     toastr.info("info", data.message);
+    //                     return ;
+    //                 }
+    //                 toastr.success("success", '使用该广告');
+    //                 $("#table").bootstrapTable('refresh');
+    //             }
+    //         });
+    //
+    //         return false;
+    //     },
+    //     'click .upload': function (e, value, row, index) {
+    //         $('.adUpload').fileupload({
+    //             url : '/wadmin/ad/adUpload/adId/'+row['adId'],
+    //             dataType: 'json',
+    //             add: function (e, data) {
+    //                 data.submit();
+    //             },
+    //             done: function (e, data) {
+    //                 var response = data.result;
+    //                 if (response.result != 0) {
+    //                     toastr.error(response.message);
+    //                     return false;
+    //                 }
+    //                 toastr.success("上传成功");
+    //                 $("#table").bootstrapTable('refresh');
+    //             }
+    //         });
+    //
+    //         return false;
+    //     }
+    // };
 
 
     //得到查询的参数

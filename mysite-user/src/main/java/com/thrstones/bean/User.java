@@ -2,6 +2,7 @@ package com.thrstones.bean;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 import java.sql.Timestamp;
 
@@ -18,31 +19,37 @@ public class User extends Base {
     /**
      * 用户密码
      */
-    @Column(name = "user_password")
+    @Column(name = "user_password", length = 50)
     private String userPassword;
+    /**
+     * 用户描述
+     */
+    @Lob
+    @Column(name = "user_desc")
+    private String userDesc;
 
     /**
      * 用户性别
      */
     @Column(name = "user_sex")
-    private int userSex;
+    private boolean userSex;
 
     /**
      * 用户邮箱
      */
-    @Column(name = "user_email")
+    @Column(name = "user_email", length = 20)
     private String userEmail;
 
     /**
      * 用户电话
      */
-    @Column(name = "user_phone")
+    @Column(name = "user_phone", length = 20)
     private String userPhone;
 
     /**
      * 用户最新登录IP
      */
-    @Column(name = "user_last_login_ip")
+    @Column(name = "user_last_login_ip", length = 15)
     private String userLastLoginIP;
 
     /**
@@ -54,7 +61,7 @@ public class User extends Base {
     /**
      * 用户注册IP
      */
-    @Column(name = "user_register_ip")
+    @Column(name = "user_register_ip", length = 15)
     private String userRegisterIP;
 
     /**
@@ -66,7 +73,7 @@ public class User extends Base {
     /**
      * 用户QQ
      */
-    @Column(name = "user_QQ")
+    @Column(name = "user_QQ", length = 15)
     private String userQQ;
 
     /**
@@ -90,6 +97,7 @@ public class User extends Base {
     /**
      * 用户个性签名
      */
+    @Lob
     @Column(name = "user_says")
     private String userSays;
 
@@ -97,7 +105,7 @@ public class User extends Base {
      * 是否锁定
      */
     @Column(name = "user_lock")
-    private int userLock;
+    private boolean userLock;
 
     /**
      * 组ID
@@ -122,11 +130,19 @@ public class User extends Base {
         this.userPassword = userPassword;
     }
 
-    public int getUserSex() {
+    public String getUserDesc() {
+        return userDesc;
+    }
+
+    public void setUserDesc(String userDesc) {
+        this.userDesc = userDesc;
+    }
+
+    public boolean isUserSex() {
         return userSex;
     }
 
-    public void setUserSex(int userSex) {
+    public void setUserSex(boolean userSex) {
         this.userSex = userSex;
     }
 
@@ -218,11 +234,11 @@ public class User extends Base {
         this.userSays = userSays;
     }
 
-    public int getUserLock() {
+    public boolean isUserLock() {
         return userLock;
     }
 
-    public void setUserLock(int userLock) {
+    public void setUserLock(boolean userLock) {
         this.userLock = userLock;
     }
 
@@ -246,6 +262,7 @@ public class User extends Base {
     public String toString() {
         return "User{" +
                 "userPassword='" + userPassword + '\'' +
+                ", userDesc='" + userDesc + '\'' +
                 ", userSex=" + userSex +
                 ", userEmail='" + userEmail + '\'' +
                 ", userPhone='" + userPhone + '\'' +

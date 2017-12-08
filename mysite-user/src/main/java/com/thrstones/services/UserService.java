@@ -21,18 +21,11 @@ public class UserService {
     @Autowired
     UserDao userDao;
 
-
-//    public List<User> getUserListByPage(int limit, int offset, String sort, String sortOrder, String name, String email, String qq) {
-//        List<User> userList = userDao.getUserListByPage(limit, offset, sort, sortOrder, name, email, qq);
-//        return  userList;
-//    }
-
-    public Integer getUserCount() {
-        Integer userCount = userDao.findAll().size();
-        return userCount;
-    }
-
     public Page<User> findAll(Pageable pageable) {
         return userDao.findAll(pageable);
+    }
+
+    public User findOne(int id) {
+        return userDao.findOne(id);
     }
 }

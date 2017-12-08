@@ -24,8 +24,15 @@ public class LoginController {
     /**
      * 返回register页面
      */
-    @RequestMapping("/register")
+    @RequestMapping("/registration.html")
     public String register() {
-        return "login/login";
+        return "login/registration";
+    }
+    /**
+     * 返回reset页面
+     */
+    @RequestMapping("/reset.html")
+    public String reset() {
+        return "login/reset";
     }
 }

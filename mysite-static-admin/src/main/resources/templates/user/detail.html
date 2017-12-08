@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:with="pageTitle='ThrStones 用户详情', primaryPage='Admin', secondaryPage='UserDetail', creatable=true">
+<head>
+</head>
+<body>
+<div id="user_form" class="row div-block">
+    <section class="panel">
+        <div class="panel-body bio-graph-info">
+            <h1>用户信息</h1>
+            <div class="row">
+                <div class="col-md-2">
+                    <div style="text-align: center;" class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="">
+                    </div>
+                </div>
+                <div class="col-md-10 user-detail">
+                    <div class="col-md-3">
+                        <div class="col-md-4">
+                            用户名 :
+                        </div>
+                        <div class="col-md-8">
+                            <span th:text="${user.name}"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-4">
+                            微信 :
+                        </div>
+                        <div class="col-md-8">
+                            <span th:text="${user.userWeiChat}"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-4">
+                            用户描述 :
+                        </div>
+                        <div class="col-md-8">
+                            <span th:text="${user.userDesc}"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-5">
+                            最近登录时间 :
+                        </div>
+                        <div class="col-md-7">
+                            <span th:text="${user.userLastLoginTime}"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 user-detail">
+                    <div class="col-md-3">
+                        <div class="col-md-4">
+                            性别 :
+                        </div>
+                        <div class="col-md-8">
+                            <span th:text="${user.userSex}"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-4">
+                            微博 :
+                        </div>
+                        <div class="col-md-8">
+                            <span th:text="${user.userWeiBo}"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-4">
+                            电话 :
+                        </div>
+                        <div class="col-md-8">
+                            <span th:text="${user.userPhone}"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-5">
+                            最近登录IP :
+                        </div>
+                        <div class="col-md-7">
+                            <span th:text="${user.userLastLoginIP}"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 user-detail">
+                    <div class="col-md-3">
+                        <div class="col-md-4">
+                            状态 :
+                        </div>
+                        <div class="col-md-8">
+                            <span th:text="${user.userLock}"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-4">
+                            QQ :
+                        </div>
+                        <div class="col-md-8">
+                            <span th:text="${user.userQQ}"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-4">
+                            Email :
+                        </div>
+                        <div class="col-md-8">
+                            <span th:text="${user.userEmail}"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-5">
+                            创建时间 :
+                        </div>
+                        <div class="col-md-7">
+                            <span th:text="${user.createTime}"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 user-detail">
+                    <div class="col-md-3">
+                        <div class="col-md-4">
+                            所属用户组 :
+                        </div>
+                        <div class="col-md-8">
+                            <span th:text="${user.groupID}"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-4">
+                            GitHub :
+                        </div>
+                        <div class="col-md-8">
+                            <span th:text="${user.userGithub}"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-4">
+                            用户注册IP :
+                        </div>
+                        <div class="col-md-8">
+                            <span th:text="${user.userRegisterIP}"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col-md-5">
+                            更新时间 :
+                        </div>
+                        <div class="col-md-7">
+                            <span th:text="${user.modifyTime}"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 user-detail">
+                    <div class="col-md-3">
+                        <div class="col-md-4">
+                            用户角色 :
+                        </div>
+                        <div class="col-md-8">
+                            <span th:text="${user.roleID}"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="col-md-2">
+                            个性签名 :
+                        </div>
+                        <div class="col-md-9">
+                            <span th:text="${user.userSays}"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 user-detail">
+                    <div class="col-md-12">
+                        <div class="col-md-1">
+                            备注 :
+                        </div>
+                        <div class="col-md-11">
+                            <span th:text="${user.remark}"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-md-offset-10">
+                    <button id="btn_editPassword" type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>&nbsp;修改密码
+                    </button>
+                    <button id="btn_delete" type="button" class="btn btn-danger">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>&nbsp;禁用
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
