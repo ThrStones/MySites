@@ -11,8 +11,13 @@
     <packaging>war</packaging>
     <name>mysite-frontend Maven Webapp</name>
     <url>http://maven.apache.org</url>
-
-
+    <dependencies>
+        <dependency>
+            <groupId>com.thrstones</groupId>
+            <artifactId>mysite-static-frontend</artifactId>
+            <version>0.1</version>
+        </dependency>
+    </dependencies>
     <build>
         <finalName>mysite-frontend</finalName>
     </build>
