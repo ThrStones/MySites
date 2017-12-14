@@ -256,7 +256,7 @@ ul.sidebar-menu li ul.sub li a {
 }
 
 ul.sidebar-menu li ul.sub li a:hover, ul.sidebar-menu li ul.sub li.active a {
-    color: #FF6C60;
+    color: #00A8FF;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -296,7 +296,7 @@ ul.sidebar-menu li a{
 
 ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
     background: #35404d;
-    color: #fff;
+    color: #00A8FF;
     display: block;
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -354,6 +354,12 @@ ul.sidebar-menu li a.active i {
 .wrapper {
     display: inline-block;
     margin-top: 60px;
+    padding: 15px;
+    width: 100%;
+}
+.wrapper-detail {
+    display: inline-block;
+    margin-top: -20px;
     padding: 15px;
     width: 100%;
 }

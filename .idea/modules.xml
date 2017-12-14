@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/mysite-frontend/mysite-frontend.iml" filepath="$PROJECT_DIR$/mysite-frontend/mysite-frontend.iml" />
       <module fileurl="file://$PROJECT_DIR$/mysite-parent/mysite-parent.iml" filepath="$PROJECT_DIR$/mysite-parent/mysite-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/mysite-static-admin/mysite-static-admin.iml" filepath="$PROJECT_DIR$/mysite-static-admin/mysite-static-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/mysite-static-frontend/mysite-static-frontend.iml" filepath="$PROJECT_DIR$/mysite-static-frontend/mysite-static-frontend.iml" />

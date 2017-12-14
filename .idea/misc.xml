@@ -4,6 +4,7 @@
     <file type="web" url="file://$PROJECT_DIR$/mysite-blog-admin" />
     <file type="web" url="file://$PROJECT_DIR$/mysite-blog-front" />
     <file type="web" url="file://$PROJECT_DIR$/mysite-blog-frontend" />
+    <file type="web" url="file://$PROJECT_DIR$/mysite-frontend" />
     <file type="web" url="file://$PROJECT_DIR$/mysite-novel-admin" />
     <file type="web" url="file://$PROJECT_DIR$/mysite-novel-frontend" />
     <file type="web" url="file://$PROJECT_DIR$/mysite-one-admin" />
@@ -23,10 +24,11 @@
         <option value="$PROJECT_DIR$/mysite-static/pom.xml" />
         <option value="$PROJECT_DIR$/mysite-static-frontend/pom.xml" />
         <option value="$PROJECT_DIR$/mysite-static-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/mysite-frontend/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

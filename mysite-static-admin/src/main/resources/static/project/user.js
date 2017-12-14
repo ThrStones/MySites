@@ -6,7 +6,7 @@ $(function () {
     $("#nav-accordion").children().children('li a.active').removeClass("active");
     $("#nav-accordion").children().children().children('ul li.active').removeClass("active");
     $("#users").addClass("active");
-    $("#user").parent().css("style", "display:block");
+    $("#users").next().css("style", "display:block");
     $("#user").addClass("active");
 
     //1.初始化Table
@@ -102,8 +102,7 @@ var TableInit = function () {
                     field: 'userLastLoginTime',
                     title: '最后登陆时间',
                     sortable: true,
-                    //——修改——获取日期列的值进行转换
-                    formatter: function (value, row, index) {
+                    formatter: function (value) {
                         return changeDateFormat(value)
                     }
                 }, {
@@ -152,7 +151,7 @@ var TableInit = function () {
         });
     }
 
-//修改——转换日期格式(时间戳转换为datetime格式)
+    //修改——转换日期格式(时间戳转换为datetime格式)
     function changeDateFormat(cellval) {
         var dateVal = cellval + "";
         if (cellval != null) {

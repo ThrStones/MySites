@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="mysite-one-frontend:war">
-    <output-path>$PROJECT_DIR$/mysite-one-frontend/target</output-path>
-    <root id="archive" name="mysite-one-frontend.war">
-      <element id="artifact" artifact-name="mysite-one-frontend:war exploded" />
-    </root>
-  </artifact>
-</component>

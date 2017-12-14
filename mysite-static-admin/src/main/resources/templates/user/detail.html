@@ -4,196 +4,68 @@
 <head>
 </head>
 <body>
-<div id="user_form" class="row div-block">
-    <section class="panel">
-        <div class="panel-body bio-graph-info">
-            <h1>用户信息</h1>
-            <div class="row">
-                <div class="col-md-2">
-                    <div style="text-align: center;" class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
-                        <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="">
+<section class="panel">
+    <header class="panel-heading">
+        详细信息
+    </header>
+    <div class="panel-body">
+        <div class="form">
+            <form class="cmxform form-horizontal tasi-form" id="signupForm" method="get" action="" novalidate="novalidate">
+                <div class="form-group ">
+                    <label for="username" class="control-label col-md-1">用户名</label>
+                    <div class="col-md-5">
+                        <input class=" form-control" id="username" name="username" type="text" th:value="${user.name}">
+                    </div>
+                    <label class="col-sm-1 control-label col-md-1">性别</label>
+                    <div class="col-md-5">
+                        <label class="checkbox-inline">
+                            <input id="inlineCheckbox1" value="1" type="checkbox"> 男
+                        </label>
+                        <label class="checkbox-inline">
+                            <input id="inlineCheckbox2" value="0" type="checkbox"> 女
+                        </label>
                     </div>
                 </div>
-                <div class="col-md-10 user-detail">
-                    <div class="col-md-3">
-                        <div class="col-md-4">
-                            用户名 :
-                        </div>
-                        <div class="col-md-8">
-                            <span th:text="${user.name}"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-4">
-                            微信 :
-                        </div>
-                        <div class="col-md-8">
-                            <span th:text="${user.userWeiChat}"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-4">
-                            用户描述 :
-                        </div>
-                        <div class="col-md-8">
-                            <span th:text="${user.userDesc}"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-5">
-                            最近登录时间 :
-                        </div>
-                        <div class="col-md-7">
-                            <span th:text="${user.userLastLoginTime}"></span>
-                        </div>
+                <div class="form-group ">
+                    <label for="lastname" class="control-label col-md-1">Lastname</label>
+                    <div class="col-md-5">
+                        <input class=" form-control" id="lastname" name="lastname" type="text">
                     </div>
                 </div>
-                <div class="col-md-10 user-detail">
-                    <div class="col-md-3">
-                        <div class="col-md-4">
-                            性别 :
-                        </div>
-                        <div class="col-md-8">
-                            <span th:text="${user.userSex}"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-4">
-                            微博 :
-                        </div>
-                        <div class="col-md-8">
-                            <span th:text="${user.userWeiBo}"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-4">
-                            电话 :
-                        </div>
-                        <div class="col-md-8">
-                            <span th:text="${user.userPhone}"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-5">
-                            最近登录IP :
-                        </div>
-                        <div class="col-md-7">
-                            <span th:text="${user.userLastLoginIP}"></span>
-                        </div>
+                <div class="form-group ">
+                    <label for="username" class="control-label col-md-1">Username</label>
+                    <div class="col-md-5">
+                        <input class="form-control " id="username" name="username" type="text">
                     </div>
                 </div>
-                <div class="col-md-10 user-detail">
-                    <div class="col-md-3">
-                        <div class="col-md-4">
-                            状态 :
-                        </div>
-                        <div class="col-md-8">
-                            <span th:text="${user.userLock}"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-4">
-                            QQ :
-                        </div>
-                        <div class="col-md-8">
-                            <span th:text="${user.userQQ}"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-4">
-                            Email :
-                        </div>
-                        <div class="col-md-8">
-                            <span th:text="${user.userEmail}"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-5">
-                            创建时间 :
-                        </div>
-                        <div class="col-md-7">
-                            <span th:text="${user.createTime}"></span>
-                        </div>
+                <div class="form-group ">
+                    <label for="password" class="control-label col-md-1">Password</label>
+                    <div class="col-md-5">
+                        <input class="form-control " id="password" name="password" type="password">
                     </div>
                 </div>
-                <div class="col-md-10 user-detail">
-                    <div class="col-md-3">
-                        <div class="col-md-4">
-                            所属用户组 :
-                        </div>
-                        <div class="col-md-8">
-                            <span th:text="${user.groupID}"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-4">
-                            GitHub :
-                        </div>
-                        <div class="col-md-8">
-                            <span th:text="${user.userGithub}"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-4">
-                            用户注册IP :
-                        </div>
-                        <div class="col-md-8">
-                            <span th:text="${user.userRegisterIP}"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-5">
-                            更新时间 :
-                        </div>
-                        <div class="col-md-7">
-                            <span th:text="${user.modifyTime}"></span>
-                        </div>
+                <div class="form-group ">
+                    <label for="confirm_password" class="control-label col-md-1">Confirm Password</label>
+                    <div class="col-md-5">
+                        <input class="form-control " id="confirm_password" name="confirm_password" type="password">
                     </div>
                 </div>
-                <div class="col-md-10 user-detail">
-                    <div class="col-md-3">
-                        <div class="col-md-4">
-                            用户角色 :
-                        </div>
-                        <div class="col-md-8">
-                            <span th:text="${user.roleID}"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="col-md-2">
-                            个性签名 :
-                        </div>
-                        <div class="col-md-9">
-                            <span th:text="${user.userSays}"></span>
-                        </div>
+                <div class="form-group ">
+                    <label for="email" class="control-label col-md-1">Email</label>
+                    <div class="col-md-5">
+                        <input class="form-control " id="email" name="email" type="email">
                     </div>
                 </div>
-                <div class="col-md-10 user-detail">
-                    <div class="col-md-12">
-                        <div class="col-md-1">
-                            备注 :
-                        </div>
-                        <div class="col-md-11">
-                            <span th:text="${user.remark}"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 col-md-offset-10">
-                    <button id="btn_editPassword" type="button" class="btn btn-default">
-                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>&nbsp;修改密码
-                    </button>
-                    <button id="btn_delete" type="button" class="btn btn-danger">
-                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>&nbsp;禁用
-                    </button>
-                </div>
-            </div>
 
-
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-5">
+                        <button class="btn btn-danger" type="submit">Save</button>
+                        <button class="btn btn-default" type="button">Cancel</button>
+                    </div>
+                </div>
+            </form>
         </div>
-    </section>
-</div>
-
+    </div>
+</section>
 </body>
 </html>
