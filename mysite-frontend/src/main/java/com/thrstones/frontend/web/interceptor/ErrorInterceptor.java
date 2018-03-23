@@ -6,6 +6,8 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.thrstones.frontend.utils.Constant;
+
 /**
  * 自定义拦截器，处理404，500
  *
@@ -38,9 +40,9 @@ public class ErrorInterceptor implements HandlerInterceptor {
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
                            ModelAndView modelAndView) throws Exception {
         System.out.println(">>>MyInterceptor1>>>>>>>请求处理之后进行调用，但是在视图被渲染之前（Controller方法调用之后）");
-        if (response.getStatus() == 500) {
+        if (response.getStatus() == Constant.ERROR_CODE_500) {
             modelAndView.setViewName("/errorpage/500");
-        } else if (response.getStatus() == 404) {
+        } else if (response.getStatus() == Constant.ERROR_CODE_404) {
             modelAndView.setViewName("/errorpage/404");
         }
     }

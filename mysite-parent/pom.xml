@@ -12,7 +12,7 @@
     <modules>
         <module>../mysite-static-admin</module>
         <module>../mysite-static-frontend</module>
-        <module>../mysite-user</module>
+        <module>../mysite-admin</module>
     </modules>
 
     <parent>
